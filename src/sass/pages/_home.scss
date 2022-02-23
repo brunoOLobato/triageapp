@@ -167,15 +167,15 @@
 @include breakpoint2($min:xs, $max:sm) {
   .welcome-to-triageApp {
     .grid {
-      @include columns( $quant: 100%, $gutter: 0px, $align: start, $template: 'image' 'text');
+      @include columns( $quant: 100%, $gutter: 0px, $align: start, $template: 'text' 'image');
     }
     .tag {
       font-size: get-vw-sm(12px);
-      padding: get-vw-sm(94px) 0 get-vw-sm(23px) 0;
+      padding: get-vw-sm(40px) 0 get-vw-sm(23px) 0;
     }
     h2 {
       font-size: get-vw-sm(36px);
-      padding: 0 0 get-vw-sm(99px) 0;
+      padding: 0 0 get-vw-sm(40px) 0;
     }
     .search {
       width: 100%;
@@ -203,6 +203,8 @@
     }
     .shaft {
       font-size: get-vw-sm(18px);
+      margin-bottom: get-vw-sm(40px);
+      display: inline-block;
       .icon {
         width: get-vw-sm(13px);
         height: get-vw-sm(13px);
@@ -219,15 +221,15 @@
 @include breakpoint2($min:'', $max:xs) {
   .welcome-to-triageApp {
     .grid {
-      @include columns( $quant: 100%, $gutter: 0px, $align: start, $template: 'image' 'text');
+      @include columns( $quant: 100%, $gutter: 0px, $align: start, $template: 'text' 'image');
     }
     .tag {
       font-size: get-vw-xs(12px);
-      padding: get-vw-xs(94px) 0 get-vw-xs(23px) 0;
+      padding: get-vw-xs(40px) 0 get-vw-xs(23px) 0;
     }
     h2 {
       font-size: get-vw-xs(36px);
-      padding: 0 0 get-vw-xs(99px) 0;
+      padding: 0 0 get-vw-xs(40px) 0;
     }
     .search {
       width: 100%;
@@ -255,6 +257,8 @@
     }
     .shaft {
       font-size: get-vw-xs(18px);
+      margin-bottom: get-vw-xs(40px);
+      display: inline-block;
       .icon {
         width: get-vw-xs(13px);
         height: get-vw-xs(13px);
