@@ -877,7 +877,6 @@
       li {
         padding: 0 get-vw-xs(28px) get-vw-xs(28px) get-vw-xs(28px);
         max-width: get-vw-xs(256px);
-        padding: 0 get-vw-xs(28px);
         &:first-child {
           max-width: get-vw-xs(256px);
           padding: 0 get-vw-xs(28px) get-vw-xs(28px) get-vw-xs(28px);
@@ -1162,8 +1161,10 @@
       line-height: get-vw-sm(47px);
     }
     .pagSlide {
-      top: get-vw-sm(154px);
-      right: get-vw-sm(27px);
+      position: relative;
+      top: 37px;
+      right: 0;
+      margin: 0 auto;
       width: get-vw-sm(165px);
       font-size: get-vw-sm(18px);
       .slick-arrow {
@@ -1216,6 +1217,9 @@
 }
 
 @include breakpoint2($min:'', $max:xs) {
+  br {
+    display: none;
+  }
   .testimony {
     padding: get-vw-xs(83px) 0 get-vw-xs(111px) 0;
     h2 {
@@ -1223,8 +1227,10 @@
       line-height: get-vw-xs(47px);
     }
     .pagSlide {
-      top: get-vw-xs(154px);
-      right: get-vw-xs(27px);
+      position: relative;
+      top: 37px;
+      right: 0;
+      margin: 0 auto;
       width: get-vw-xs(165px);
       font-size: get-vw-xs(18px);
       .slick-arrow {
