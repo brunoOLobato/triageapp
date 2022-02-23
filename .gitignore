@@ -36,7 +36,7 @@ sftp-config.json
 src/node_modules/*
 
 # Assets
-assets/css/main.css
-assets/css/main.min.css
-assets/js/bundle.js
-assets/js/bundle.min.js
+# assets/css/main.css
+# assets/css/main.min.css
+# assets/js/bundle.js
+# assets/js/bundle.min.js
