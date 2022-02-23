@@ -21,6 +21,11 @@ export default function() {
     $(this).toggleClass('opened').attr('aria-expanded', 'true');
     return false;
   });
+  $(document).on('click', '.menu-open .wraper', function() {
+    $('body,html').toggleClass('menu-open');
+    $('#open-menu').toggleClass('opened').attr('aria-expanded', 'true');
+    return false;
+  });
   $(document).on('click', '.item-menu-mobile > a', function() {
     $(this).toggleClass('act').closest('li').find('.itens-lists-menu-mobile').slideToggle();
     return false;
