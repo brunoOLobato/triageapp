@@ -237,8 +237,11 @@ header {
         overflow: hidden;
         justify-content: center;
         img {
-          display: block;
           margin: 4px auto 4px auto;
+          display: block;
+          &.over {
+            display: none;
+          }
         }
         span {
           display: block;
@@ -248,6 +251,12 @@ header {
           background-color: #16D26E;
           font-weight: 500;
           color: #1E1B35;
+          img {
+            display: none;
+            &.over {
+              display: block;
+            }
+          }
         }
       }
       .slick-current {
@@ -255,6 +264,12 @@ header {
           background-color: #16D26E;
           font-weight: 500;
           color: #1E1B35;
+          img {
+            display: none;
+            &.over {
+              display: block;
+            }
+          }
         }
       }
       ul {
@@ -322,8 +337,11 @@ header {
           overflow: hidden;
           justify-content: center;
           img {
-            display: block;
             margin: 4px auto 4px auto;
+            display: block;
+            &.over {
+              display: none;
+            }
           }
           span {
             display: block;
@@ -334,6 +352,12 @@ header {
             background-color: #16D26E;
             font-weight: 500;
             color: #1E1B35;
+            img {
+              display: none;
+              &.over {
+                display: block;
+              }
+            }
           }
         }
         .itens-lists-menu-mobile {
