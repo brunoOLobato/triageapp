@@ -4,7 +4,8 @@
 export default function() {
   setTimeout(function() {
     $('.mega-menu').hide();
-  }, 200);
+    $('#loading').addClass('hide');
+  }, 1000);
   $(document).on('click', '.anchor', function() {
     var $target = $(this).attr('href');
     var $offset = $($target).position().top;

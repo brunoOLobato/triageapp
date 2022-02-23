@@ -14,6 +14,9 @@
     }
     .image {
       grid-area: image;
+      img {
+        width: 100%;
+      }
     }
   }
   .tag {
@@ -572,6 +575,9 @@
       }
       &.image {
         grid-area: image;
+        img {
+          width: 100%;
+        }
       }
       h3 {
         font-family: $font-main;
@@ -1070,6 +1076,9 @@
           background-color: #AAFFD2;
           margin-right: 15px;
           overflow: hidden;
+          img {
+            width: 100%;
+          }
         }
         h3 {
           font-family: $font-main;
@@ -1296,6 +1305,9 @@
     }
     .image {
       grid-area: image;
+      img {
+        width: 100%;
+      }
     }
   }
   h2 {
