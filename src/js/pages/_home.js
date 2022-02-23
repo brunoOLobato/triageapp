@@ -21,4 +21,12 @@ export default function() {
     $(this).toggleClass('opened').attr('aria-expanded', 'true');
     return false;
   });
+  $(document).on('click', '.item-menu-mobile > a', function() {
+    $(this).toggleClass('act').closest('li').find('.itens-lists-menu-mobile').slideToggle();
+    return false;
+  });
+  $(document).on('click', '.subitem-menu-mobile', function() {
+    $(this).closest('div').find('ul').slideToggle();
+    return false;
+  });
 }
