@@ -634,10 +634,28 @@ header {
   }
   .wraper {
     @include animate($time: 0.3s);
+    position: relative;
+    &:after {
+      @include animate($time: 0.3s);
+      content: '';
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #000;
+      z-index: 1000;
+      opacity: 0;
+    }
   }
   .menu-open {
     .wraper {
       transform: translate(-80%, 0);
+      &:after {
+        content: '';
+        width: 100%;
+        opacity: 0.5;
+      }
     }
     header nav.mega-menu-mobile {
       width: 80%;
