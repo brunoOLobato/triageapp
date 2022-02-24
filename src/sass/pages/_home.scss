@@ -524,6 +524,7 @@
   .complete-network {
     height: get-vw-sm(678px);
     padding: get-vw-sm(41px) 0 0 0;
+    background-size: contain;
     h2 {
       font-size: get-vw-sm(36px);
       line-height: get-vw-sm(47px);
@@ -543,6 +544,7 @@
   .complete-network {
     height: get-vw-xs(678px);
     padding: get-vw-xs(41px) 0 0 0;
+    background-size: contain;
     h2 {
       font-size: get-vw-xs(36px);
       line-height: get-vw-xs(47px);
@@ -654,10 +656,10 @@
   .featured {
     padding: get-vw-sm(80px) 0 get-vw-sm(40px) 0;
     .grid {
-      @include columns( $quant: 100%, $gutter: 0%, $align: center, $template: 'text' 'image');
+      @include columns( $quant: 100%, $gutter: 0%, $align: center, $template: 'image' 'text');
       padding-bottom: get-vw-sm(60px);
       &.right {
-        grid-template-areas: 'text' 'image';
+        grid-template-areas: 'image' 'text';
         .item.text {
           padding-left: get-vw-sm(98px);
         }
@@ -677,6 +679,9 @@
           padding: get-vw-sm(15px) get-vw-sm(32px);
           border-radius: get-vw-sm(4px);
         }
+        &.mpadding {
+          padding-bottom: get-vw-sm(60px);
+        }
       }
     }
   }
@@ -686,10 +691,10 @@
   .featured {
     padding: get-vw-xs(80px) 0 get-vw-xs(40px) 0;
     .grid {
-      @include columns( $quant: 100%, $gutter: 0%, $align: center, $template: 'text' 'image');
+      @include columns( $quant: 100%, $gutter: 0%, $align: center, $template: 'image' 'text');
       padding-bottom: get-vw-xs(60px);
       &.right {
-        grid-template-areas: 'text' 'image';
+        grid-template-areas: 'image' 'text';
         .item.text {
           padding-left: get-vw-xs(20px);
         }
@@ -708,6 +713,9 @@
           margin: get-vw-xs(30px) 0 0 0;
           padding: get-vw-xs(15px) get-vw-xs(32px);
           border-radius: get-vw-xs(4px);
+        }
+        &.mpadding {
+          padding-bottom: get-vw-sm(60px);
         }
       }
     }
@@ -840,6 +848,7 @@
       &::before {
         height: get-vw-sm(3px);
         top: get-vw-sm(96px);
+        display: none;
       }
       li {
         max-width: get-vw-sm(256px);
@@ -883,6 +892,7 @@
       &::before {
         height: get-vw-xs(3px);
         top: get-vw-xs(96px);
+        display: none;
       }
       li {
         padding: 0 get-vw-xs(28px) get-vw-xs(28px) get-vw-xs(28px);
@@ -928,6 +938,35 @@
     text-align: center;
     color: $color-blue;
     padding: 115px 0 80px 0;
+  }
+  .slide-logo {
+    img {
+      width: 100%;
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: #16D26E;
+      border-radius: 4px;
+      font-size: 23px;
+      color: $color-white;
+      z-index: 10;
+      @include animate($time: 0.3s);
+      &.slick-prev {
+        left: 50%;
+        transform: translate(-600px, -50%);
+      }
+      &.slick-next {
+        right: 50%;
+        transform: translate(600px, -50%);
+      }
+      &:hover {
+        background: #09AC56;
+      }
+    }
   }
   ul {
     display: flex;

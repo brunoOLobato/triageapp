@@ -16,6 +16,35 @@ export default function() {
     centerPadding: 0
   });
 
+  const $logoslider = $('.slide-logo');
+  $logoslider.slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+    centerMode: false,
+    focusOnSelect: true,
+    adaptiveHeight: true,
+    centerPadding: 0,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
   const $testimonyslider = $('.slide-testimony');
   const $status = $('.pagingInfo');

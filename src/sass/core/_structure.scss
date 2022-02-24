@@ -939,3 +939,72 @@ footer {
 }
 
 // end footer
+.btn-special {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #6D2FFF;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.btn-special:hover {
+  -webkit-box-shadow: 0px 0px 16px 11px rgba(90, 26, 240, 0.37);
+  box-shadow: 0px 0px 16px 11px rgba(90, 26, 240, 0.37);
+}
+
+.btn-special span {
+  display: block;
+}
+
+.btn-special span b {
+  background: rgba(90, 26, 240, 0.3);
+  border: 1px solid #5A1AF0;
+  display: block;
+  padding: 11px 39px;
+}
+
+.btn-special:before,
+.btn-special:after,
+.btn-special span:before,
+.btn-special span:after {
+  content: '';
+  background: rgba(90, 26, 240, 0.3);
+  width: 5px;
+  height: 5px;
+  border: 1px solid #5A1AF0;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 16px 11px rgba(90, 26, 240, 0.37);
+  box-shadow: 0px 0px 16px 11px rgba(90, 26, 240, 0.37);
+}
+
+.btn-special:after {
+  border-width: 0 0 2px 2px;
+  bottom: -1px;
+  left: -1px;
+}
+
+.btn-special:before {
+  content: '';
+  border-width: 0px 2px 2px 0;
+  bottom: -1px;
+  right: -1px;
+}
+
+.btn-special span:after {
+  border-width: 2px 0 0 2px;
+  top: -1px;
+  left: -1px;
+}
+
+.btn-special span:before {
+  content: '';
+  border-width: 2px 2px 0 0;
+  top: -1px;
+  right: -1px;
+}
