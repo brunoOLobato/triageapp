@@ -35,4 +35,8 @@ export default function() {
     $(this).closest('div').find('ul').slideToggle();
     return false;
   });
+  $(document).on('click', '.menu-mobile > a', function() {
+    $(this).toggleClass('act').closest('li').find('.lists-menu-mobile').slideToggle();
+    return false;
+  });
 }
