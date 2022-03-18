@@ -345,8 +345,35 @@ header {
             text-decoration: underline;
           }
         }
+        &.menu-btn {
+          padding: 0 12px 10px 12px;
+          a {
+            font-weight: 500;
+            border: 1px solid #16D26E;
+            display: block;
+            padding: 15px 23.5px 15px 23.5px;
+            border-radius: 6px;
+            &:hover {
+              text-decoration: none;
+              background-color: #16D26E;
+              color: #FFF;
+            }
+          }
+          &.actbtn {
+            a {
+              font-weight: 500;
+              border: 1px solid #16D26E;
+              display: block;
+              padding: 15px 23.5px 15px 23.5px;
+              border-radius: 6px;
+              text-decoration: none;
+              background-color: #16D26E;
+              color: #FFF;
+            }
+          }
+        }
         &>ul {
-          display: none;
+          //display: none;
           &>li {
             a {
               font-family: $font-main;
